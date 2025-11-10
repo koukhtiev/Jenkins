@@ -5,11 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh pwd
+                //sh pwd
+                CUR_LOCATION = sh pwd
                 //sh "cd '/home/valeriy/eclipse-workspace/makefile_project/build/default'"
                 //make -f '../../Makefile' 
                 //make all
-                echo 'Building finished'            
+                echo 'Building finished $(CUR_LOCATION)'            
             }
         }
         stage('Test') {
