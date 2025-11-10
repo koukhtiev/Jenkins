@@ -6,7 +6,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 //cd "/home/valeriy/eclipse-workspace/makefile_project/build/default"
-                make -f '../../Makefile'         
+                //make -f '../../Makefile' 
+                make all
                 echo 'Building finished'            
             }
         }
