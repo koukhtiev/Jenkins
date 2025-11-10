@@ -7,7 +7,7 @@ pipeline {
                 echo 'Building..'
                 //cd "/home/valeriy/eclipse-workspace/makefile_project/build/default"
                 //make -f '../../Makefile' 
-                make all
+                //make all
                 echo 'Building finished'            
             }
         }
