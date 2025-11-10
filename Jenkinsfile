@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                cd /home/valeriy/eclipse-workspace/makefile_project/build/default
+                cd "/home/valeriy/eclipse-workspace/makefile_project/build/default"
                 make -f ../../Makefile                
                 echo 'Building finished'            
             }
