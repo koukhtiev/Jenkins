@@ -5,6 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+//Building in: /home/valeriy/eclipse-workspace/makefile_project/build/default
+                make -f /home/valeriy/eclipse-workspace/makefile_project/Makefile
+                echo 'Building finished'            
             }
         }
         stage('Test') {
